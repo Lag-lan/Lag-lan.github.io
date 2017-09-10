@@ -5,23 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jorshua Hernandez</title>
     <link rel="stylesheet" href="assets/css/bulma.css">
     <link rel="stylesheet" href="assets/css/mod.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>Jorshua Hernandez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
+<!--
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any nav burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+
+                    // Get the target from the "data-target" attribute
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+
+                    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
+-->
 
 <body>
     <section class="hero fondo is-fullheight">
         <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a href="index.html" class="navbar-item">
-                            <img src="assets/media/logoN.svg" alt="Desarrollo al vuelo" height="28">
-                        </a>
-
-                    </div>
+            <nav class="navbar fondo">
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item">
+                        <img src="assets/media/logoB.svg" alt="Desarrollo al vuelo" height="28">
+                    </a>
+                </div>
+                <div class="navbar-end navMenu">
+                    <a href="#Acerca" class="navbar-item titulo">About</a>
+                    <a href="#Proyectos" class="navbar-item titulo">Proyects</a>
+                    <a href="#Contacto" class="navbar-item titulo">Contact</a>
                 </div>
             </nav>
         </div>
@@ -30,15 +61,91 @@
             <div class="container has-text-centered">
                 <img src="assets/media/logoB.svg" alt="LagLan Desarrollos">
                 <h1 class="title is-1">
-                    Lag-Lan Development
+                    Lag-Lan Developments
                 </h1>
                 <p>aka things made by jorshua hernandez</p>
             </div>
         </div>
     </section>
-    <div class="columns">
-        <div class="column is-three-quarters">prueba</div>
-    </div>
+
+    <section id="Acerca" class="hero is-fullheight is-warning">
+        <div class="hero-body">
+            <div class="container">
+                <div class="title has-text-centered">
+                    <p>About of:</p>
+                    <h1 class="title is-1 ">Jorshua hernandez</h1>
+
+                </div>
+
+            </div>
+            <h2 class="subtitle is-4">I'm a student of enginnering and this is my first try of bulding my own web page or porfolio</h2>
+        </div>
+
+    </section>
+    <section id="Proyectos" class="hero is-fullheight is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <div class="title">
+                    <h1 class="is-1 has-text-centered">Proyects</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <br>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification fondo1">
+                                    <p class="title">Page logo</p>
+                                    <p class="subtitle">I was thinking in the logo of half life and some mathemathical letters and that's what came out 
+                                        <br> It's a interesting logo</p>
+                                    <figure class="image is-4by3">
+                                        <img src="assets/media/logoB.svg">
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification fondo2">
+                                <p class="title">Vortex.io</p>
+                                <p class="subtitle">A streaming game app (like a netflix but for games)</p>
+                                <div class="content">
+                                    <figure class="image" is-16by9>
+                                        <img src="assets/media/vLogin.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacto" class="hero is-medium fondo2">
+        <div class="hero-body">
+            <div class="container">
+                <div class="title has-text-centered">
+                    <p>Send me a mail and we can talk about everything!</p>
+                    <br>
+                    <a href="mailto:jhernandez@udi.edu.co?Subject=Hi%20there" target="_top" class="button is-large">Send mail</a>
+                    <h2 class="subtitle is-6"style="color:white">Hello there</h2>
+                    <br>
+                    <br><br>
+                    <p class="field">
+                        <a href="https://github.com/Lag-lan/Lag-lan.github.io" class="button is-success">
+                            <span class="icon"><i class="fa fa-github"></i>
+                            </span><span>GitHub</span>
+                        </a>
+                        <p class="subtitle is-6 is-gapless"style="color:white" >Repo of the proyect</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

@@ -26,6 +26,64 @@
         50%{background-position:100% 51%}
         100%{background-position:0% 50%}
     }
+
+    .fondo1{
+    background: linear-gradient(59deg, #ec4863, #ff5827, #ffda66);
+    background-size: 600% 600%;
+    -webkit-animation: fondo1 30s ease infinite;
+    -moz-animation: fondo1 30s ease infinite;
+    -o-animation: fondo1 30s ease infinite;
+    animation: fondo1 30s ease infinite;
+    }
+    @-webkit-keyframes fondo1 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @-moz-keyframes fondo1 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @-o-keyframes fondo1 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @keyframes fondo1 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    .fondo2{
+    background: linear-gradient(215deg,#031540,  #023574, #084EA8, #21363F, #3B6074);
+    background-size: 600% 600%;
+    -webkit-animation: fondo2 30s ease infinite;
+    -moz-animation: fondo2 30s ease infinite;
+    -o-animation: fondo2 30s ease infinite;
+    animation: fondo2 30s ease infinite;
+    }
+    @-webkit-keyframes fondo2 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @-moz-keyframes fondo2 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @-o-keyframes fondo2 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+    @keyframes fondo2 {
+        0%{background-position:100% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+    }
+
     .title{
         color: white;
     }

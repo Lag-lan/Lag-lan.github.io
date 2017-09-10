@@ -5,25 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jorshua Hernandez</title>
     <link rel="stylesheet" href="assets/css/bulma.css">
     <link rel="stylesheet" href="assets/css/mod.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <title>Jorshua Hernandez</title>
 </head>
+<!--
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
 
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any nav burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+
+                    // Get the target from the "data-target" attribute
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+
+                    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
+-->
 <body>
     <section class="hero fondo is-fullheight">
         <div class="hero-head">
             <nav class="navbar fondo">
                 <div class="navbar-brand">
                     <a href="index.html" class="navbar-item">
-                        <img src="assets/media/logoN.svg" alt="Desarrollo al vuelo" height="28">
+                        <img src="assets/media/logoB.svg" alt="Desarrollo al vuelo" height="28">
                     </a>
                 </div>
-                <div class="navbar-end">
-                    <a class="navbar-item titulo" href="#A">Acerca</a>
-                    <a class="navbar-item titulo" href="#Proyectos">Proyectos</a>
-                    <a class="navbar-item titulo" href="#Contacto">Contacto</a>
+                <div class="navbar-end navMenu">
+                    <a href="#Acerca" class="navbar-item titulo">Acerca</a>
+                    <a href="#Proyectos" class="navbar-item titulo">Proyectos</a>
+                    <a href="#Contacto" class="navbar-item titulo">Contacto</a>
                 </div>
             </nav>
         </div>
@@ -39,18 +67,18 @@
         </div>
     </section>
 
-    <section id="#Acerca" class="hero is-fullheight is-warning">
+    <section id="Acerca" class="hero is-fullheight is-warning">
         <div class="hero-body">
             <div class="container">
                 <div class="title has-text-centered">
                     <p>Acerca de:</p>
                     <h1 class="title is-1 ">Jorshua hernandez</h1>
-                   
+
                 </div>
-                
+
             </div>
-             <h2 class="subtitle is-4">Soy un estudiante de ingenieria en sistemas y actualmente estoy iniciando, lo que quiere decir que para
-                        hacer una pagina asi de sencilla me llevo muchas horas lograrla terminar</h2>
+            <h2 class="subtitle is-4">Soy un estudiante de ingenieria en sistemas y actualmente estoy iniciando en esto del diseño web, lo que quiere
+                decir que para hacer una pagina asi de sencilla me llevo muchas horas lograrla terminar</h2>
         </div>
 
     </section>
@@ -64,53 +92,57 @@
             <br>
             <br>
             <div class="container">
-                    <br>
-                    <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-8">
-                            <div class="tile">
-                                <div class="tile is-parent is-vertical">
-                                    <article class="tile is-child notification is-primary">
-                                        <p class="title">Vertical...</p>
-                                        <p class="subtitle">Top tile</p>
-                                    </article>
-                                    <article class="tile is-child notification is-warning">
-                                        <p class="title">...tiles</p>
-                                        <p class="subtitle">Bottom tile</p>
-                                    </article>
-                                </div>
-                                <div class="tile is-parent">
-                                    <article class="tile is-child notification is-info">
-                                        <p class="title">Middle tile</p>
-                                        <p class="subtitle">With an image</p>
-                                        <figure class="image is-4by3">
-                                            <img src="http://bulma.io/images/placeholders/640x480.png">
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
+                <br>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
                             <div class="tile is-parent">
-                                <article class="tile is-child notification is-danger">
-                                    <p class="title">Wide tile</p>
-                                    <p class="subtitle">Aligned with the right tile</p>
-                                    <div class="content">
-                                        <!-- Content -->
-                                    </div>
+                                <article class="tile is-child notification fondo1">
+                                    <p class="title">Logo de la pagina</p>
+                                    <p class="subtitle">Basicamente me base entre el logo de half life y tambien de algunas letras especificas
+                                        para matematicas... <br> Salio un resultado interesante L(al cuadrado)</p>
+                                    <figure class="image is-4by3">
+                                        <img src="assets/media/logoB.svg">
+                                    </figure>
                                 </article>
                             </div>
                         </div>
                         <div class="tile is-parent">
-                            <article class="tile is-child notification is-success">
+                            <article class="tile is-child notification fondo2">
+                                <p class="title">Vortex.io</p>
+                                <p class="subtitle">App de videojuegos via streaming</p>
                                 <div class="content">
-                                    <p class="title">Tall tile</p>
-                                    <p class="subtitle">With even more content</p>
-                                    <div class="content">
-                                        <!-- Content -->
-                                    </div>
+                                    <figure class="image" is-16by9>
+                                        <img src="assets/media/vLogin.jpg" alt="">
+                                    </figure>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contacto" class="hero is-medium fondo2">
+        <div class="hero-body">
+            <div class="container">
+                <div class="title has-text-centered">
+                    <p>Enviame un mail y hablemos de lo que sea!</p>
+                    <br>
+                    <a href="mailto:jhernandez@udi.edu.co?Subject=Hola%20vengo%20a%20joderlo" target="_top" class="button is-large">Molestar</a>
+                    <h2 class="subtitle is-6"style="color:white">Escriba sobre que quiere joder</h2>
+                    <br>
+                    <br><br>
+                    <p class="field">
+                        <a href="https://github.com/Lag-lan/Lag-lan.github.io" class="button is-success">
+                            <span class="icon"><i class="fa fa-github"></i>
+                            </span><span>GitHub</span>
+                        </a>
+                        <p class="subtitle is-6 is-gapless"style="color:white" >Repositorio de la pagina</p>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
