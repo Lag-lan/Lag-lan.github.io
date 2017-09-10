@@ -6,6 +6,7 @@ Portafolio personal en el que se enseñaran algunos de mis proyectos propuestos 
 
 * Github pages para el hospedaje
 * [Bulma.css](http://bulma.io) de @jgthms
+* [CSS Gradient Animator](https://www.gradient-animator.com/) de @ianforr
 * La trasnochada del año hasta el momento
 * Creo que nada mas por ahora  :thumbsup:
 
