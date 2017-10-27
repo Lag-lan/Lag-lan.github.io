@@ -60,25 +60,11 @@
                   <div class="flex__item flex__item--left">
                     <div class="flex__content">
                       <p class="text--sub">Contacto</p>
-                      <h1 class="text--big">Catch me</h1>
-                      <p class="text--normal"><b>Hablemos!!!</b>, no importa si es para hablar del ultimo capitulo de DBS o de lo que sea </p>
-                      
-                      <div class='centerMe'>
-                        <div class='cta'>
-                          <span>Mandar mensaje</span>
-                          <form>
-                            <div class='input'>
-                              <input placeholder='E-mail'>
-                            </div>
-                            <div class='button'>
-                              <button type='submit'>Enviar</button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-
+                      <h1 class="text--big">Preguntas?</h1>
+                      <p class="text--normal"><b>Hablemos!!!</b>, puede ser desde algo relacionado con desarrollo web hasta teorias locas del ultimo capitulo de dbs</p>
+                      <p><a href="mailto:jhernandez28@udi.edu.co?Subject=Pregunta%20Pagina"></a></p>
                     </div>
-                    <p class="text__background">Up</p>
+                    <p class="text__background">Holo</p>
                   </div>
                   <div class="flex__item flex__item--right"></div>
                 </div>
@@ -96,9 +82,9 @@
 <script>
     $('.slide-nav').on('click', function(e) {
   e.preventDefault();
-  // get current slide
+  // get slide actual
   var current = $('.flex--active').data('slide'),
-    // get button data-slide
+  // get boton 
     next = $(this).data('slide');
 
   $('.slide-nav').removeClass('active');
@@ -116,7 +102,7 @@
   }
 });
 
-$(".cta span").click(function(){
+/*$(".cta span").click(function(){
     $(".cta:not(.sent)").addClass("active");
     $("input").focus();
 });
@@ -136,6 +122,6 @@ $("form").submit(function(x){
         $(".cta span").text("Listo!");
         $(".cta").removeClass("active").addClass("sent");
     }
-});
+});*/
 </script>
 </html>
