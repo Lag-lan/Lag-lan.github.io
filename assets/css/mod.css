@@ -304,18 +304,5 @@ body {
 	transform: translate3d(200px,0,0);
 	opacity: 0;
 }
-
-/* modal */
-.centerMe {
-	position: absolute;
-	bottom: -90px;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-  }
-  
-  ::-webkit-input-placeholder {
-	color: #424242;
-  }
   
  
