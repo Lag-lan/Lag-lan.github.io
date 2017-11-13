@@ -22,15 +22,15 @@
                   </div>
                   <div class="flex__item flex__item--right"></div>
                 </div>
-                <div class="flex__container flex--vortex animate--start" data-slide="2">
+                <div class="flex__container flex--dev animate--start" data-slide="2">
                   <div class="flex__item flex__item--left">
                     <div class="flex__content">
-                      <p class="text--sub">Proyectos</p>
-                      <h1 class="text--big">Vortex.io</h1>
-                      <p class="text--normal">Plataforma especializada en videojuegos indie bajo suscripcion mensual</p>
-                        <span class="text">Proximamente disponible</span>
+                      <p class="text--sub">Que queremos</p>
+                      <h1 class="text--big">Mision</h1>
+                      <p class="text--normal">Crear experiencias de usuario sorprendentes por medio de los colores vividos, las buenas paletas de colores, el buen uso de las nuevas tecnologias web y tambien la creacion de software que logre cautivar por su innovacion o su funcionalidad</p>
+                        <span class="text">°-°</span>
                     </div>
-                    <p class="text__background">vortex.io</p>
+                    <p class="text__background">Mision</p>
                   </div>
                   <div class="flex__item flex__item--right"></div>
                 </div>
@@ -48,23 +48,37 @@
                 <div class="flex__container flex--mision animate--start" data-slide="4">
                   <div class="flex__item flex__item--left">
                     <div class="flex__content">
-                      <p class="text--sub">Acerca de mi</p>
-                      <h1 class="text--big">Mision</h1>
-                      <p class="text--normal">Crear experiencias de usuario sorprendentes por medio de los colores vividos, las buenas paletas de colores, el buen uso de las nuevas tecnologias web y tambien la creacion de software que logre cautivar por su innovacion o su funcionalidad</p>
+                      <p class="text--sub">Proyectos</p>
+                      <h1 class="text--big">Motos JF</h1>
+                      <p class="text--normal">Portal para la comercializadora de motos y motopartes en bucaramanga y el area metropolitana</p>
                     </div>
-                    <p class="text__background">Mision</p>
+                    <p class="text__background">JF</p>
                   </div>
                   <div class="flex__item flex__item--right"></div>
                 </div>
                 <div class="flex__container flex--contacto animate--start" data-slide="5">
                   <div class="flex__item flex__item--left">
                     <div class="flex__content">
-                      <p class="text--sub">Contacto</p>
-                      <h1 class="text--big">Preguntas?</h1>
-                      <p class="text--normal"><b>Hablemos!!!</b>, puede ser desde algo relacionado con desarrollo web hasta teorias locas del ultimo capitulo de dbs</p>
-                      <p>Correo: jhernandez28@udi.edu.co</p>
+                      <p class="text--sub">Supongo que podemos hablar</p>
+                      <h1 class="text--big">Contacto</h1>
+                      <p class="text--normal"><b>Hablemos!!!</b>, no importa si es para hablar del ultimo capitulo de DBS o de lo que sea </p>
+                      
+                      <div class='centerMe'>
+                        <div class='cta'>
+                          <span>Mandar mensaje</span>
+                          <form>
+                            <div class='input'>
+                              <input placeholder='E-mail'>
+                            </div>
+                            <div class='button'>
+                              <button type='submit'>Enviar</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
                     </div>
-                    <p class="text__background">Holo</p>
+                    <p class="text__background">Up</p>
                   </div>
                   <div class="flex__item flex__item--right"></div>
                 </div>
@@ -72,9 +86,9 @@
               
               <div class="slider__navi">
                 <a href="#" class="slide-nav active" data-slide="1">Dev</a>
-                <a href="#" class="slide-nav" data-slide="2">Vortex.io</a>
+                <a href="#" class="slide-nav" data-slide="2">Mision</a>
                 <a href="#" class="slide-nav" data-slide="3">Blaz-ken</a>
-                <a href="#" class="slide-nav" data-slide="4">Mision</a>
+                <a href="#" class="slide-nav" data-slide="4">Github</a>
                 <a href="#" class="slide-nav" data-slide="5">Contacto</a>
               </div>
 </body>
@@ -82,9 +96,9 @@
 <script>
     $('.slide-nav').on('click', function(e) {
   e.preventDefault();
-  // get slide actual
+  // get current slide
   var current = $('.flex--active').data('slide'),
-  // get boton 
+    // get button data-slide
     next = $(this).data('slide');
 
   $('.slide-nav').removeClass('active');
@@ -102,7 +116,7 @@
   }
 });
 
-/*$(".cta span").click(function(){
+$(".cta span").click(function(){
     $(".cta:not(.sent)").addClass("active");
     $("input").focus();
 });
@@ -122,6 +136,6 @@ $("form").submit(function(x){
         $(".cta span").text("Listo!");
         $(".cta").removeClass("active").addClass("sent");
     }
-});*/
+});
 </script>
 </html>
