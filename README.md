@@ -18,3 +18,11 @@ Apartir de esta version desisti del uso de un framework debido a que el simple h
 
 * HTML5
 * CSS
+
+## Version 0.4
+
+Luego de un año sin movimiento alguno he decidido hacer modificaciones al sitio para que empiece a funcionar como portafolio de proyectos y herramientas desarrolladas por mi mismo
+
+* espero hacer uso de la grid y flexbox en esta nueva version junto con un motor javascript para las animaciones de los elementos SVG
+
+## Mas contenido por venir proximamente
