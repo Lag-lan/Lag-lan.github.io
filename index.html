@@ -1,127 +1,214 @@
-<<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/mod.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
-    <title>Lag-Lan Desarrollos</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lag-Lan | Re:Diseño</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-        <div class="slider__warpper">
-                <div class="flex__container flex--dev flex--active" data-slide="1">
-                  <div class="flex__item flex__item--left">
-                    <div class="flex__content">
-                      <p class="text--sub">Jorshua Hernandez</p>
-                      <h1 class="text--big">lag-lan</h1>
-                      <p class="text--normal">Desarrollo de interfaces, software, diseño y otras cosas -_-</p>
-                    </div>
-                    <p class="text__background">DEV</p>
-                  </div>
-                  <div class="flex__item flex__item--right"></div>
-                </div>
-                <div class="flex__container flex--dev animate--start" data-slide="2">
-                  <div class="flex__item flex__item--left">
-                    <div class="flex__content">
-                      <p class="text--sub">Que queremos</p>
-                      <h1 class="text--big">Mision</h1>
-                      <p class="text--normal">Crear experiencias de usuario sorprendentes por medio de los colores vividos, las buenas paletas de colores, el buen uso de las nuevas tecnologias web y tambien la creacion de software que logre cautivar por su innovacion o su funcionalidad</p>
-                        <span class="text">°-°</span>
-                    </div>
-                    <p class="text__background">Mision</p>
-                  </div>
-                  <div class="flex__item flex__item--right"></div>
-                </div>
-                <div class="flex__container flex--blazken animate--start" data-slide="3">
-                  <div class="flex__item flex__item--left">
-                    <div class="flex__content">
-                      <p class="text--sub">Proyectos</p>
-                      <h1 class="text--big">Blaz-ken</h1>
-                      <p class="text--normal">Blaz-ken es supuestamente un hack n' slash pero debido a lo poco que ha avanzado el proyecto puede que cambie su genero, aun no ha salido de su version 0.01 (la imagen es un concepto)</p>
-                    </div>
-                    <p class="text__background">Blaz-ken</p>
-                  </div>
-                  <div class="flex__item flex__item--right"></div>
-                </div>
-                <div class="flex__container flex--mision animate--start" data-slide="4">
-                  <div class="flex__item flex__item--left">
-                    <div class="flex__content">
-                      <p class="text--sub">Proyectos</p>
-                      <h1 class="text--big">Motos JF</h1>
-                      <p class="text--normal">Portal para la comercializadora de motos y motopartes en bucaramanga y el area metropolitana</p>
-                    </div>
-                    <p class="text__background">JF</p>
-                  </div>
-                  <div class="flex__item flex__item--right"></div>
-                </div>
-                <div class="flex__container flex--contacto animate--start" data-slide="5">
-                  <div class="flex__item flex__item--left">
-                    <div class="flex__content">
-                      <p class="text--sub">Supongo que podemos hablar</p>
-                      <h1 class="text--big">Contacto</h1>
-                      <p class="text--normal"><b>Hablemos!!!</b>, no importa si es para hablar del ultimo capitulo de DBS o de lo que sea </p><br>
-                      <p>En Github: @Lag-lan<br>Correo: jhernandez28@udi.edu.co</p>
-                    </div>
-                    <p class="text__background">Github</p>
-                  </div>
-                  <div class="flex__item flex__item--right"></div>
-                </div>
-              </div>
-              
-              <div class="slider__navi">
-                <a href="#" class="slide-nav active" data-slide="1">Dev</a>
-                <a href="#" class="slide-nav" data-slide="2">Mision</a>
-                <a href="#" class="slide-nav" data-slide="3">Blaz-ken</a>
-                <a href="#" class="slide-nav" data-slide="4">Github</a>
-                <a href="#" class="slide-nav" data-slide="5">Contacto</a>
-              </div>
-</body>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>
-    $('.slide-nav').on('click', function(e) {
-  e.preventDefault();
-  // get current slide
-  var current = $('.flex--active').data('slide'),
-    // get button data-slide
-    next = $(this).data('slide');
+<style>
 
-  $('.slide-nav').removeClass('active');
-  $(this).addClass('active');
+    @import url("https://fonts.googleapis.com/css?family=Lato:900");
+html,
+body,
+ul,
+li,
+span,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
 
-  if (current === next) {
-    return false;
-  } else {
-    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-    $('.flex--active').addClass('animate--end');
-    setTimeout(function() {
-      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-    }, 800);
+.smoll {
+  display: none;
+}
+
+body {
+  background: linear-gradient(208deg, #861388, #ff6978, #fe4a49, #008dd5, #eac435);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 41s ease infinite;
+  animation: AnimationName 41s ease infinite;
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Lato',
+ sans-serif;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 87% 0%;
   }
-});
+  50% {
+    background-position: 14% 100%;
+  }
+  100% {
+    background-position: 87% 0%;
+  }
+}
 
-$(".cta span").click(function(){
-    $(".cta:not(.sent)").addClass("active");
-    $("input").focus();
-});
+@keyframes AnimationName {
+  0% {
+    background-position: 87% 0%;
+  }
+  50% {
+    background-position: 14% 100%;
+  }
+  100% {
+    background-position: 87% 0%;
+  }
+}
 
-var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+.preloader {
+  width: 100%;
+  height: 100%;
+  color: #f1f4ef;
+}
 
-$("input").on('input', function(){
-    if(regex.test($(this).val())) {
-        $("button").removeAttr("disabled"); }
-    else {
-        $("button").attr("disabled", "disabled"); }
-});
+.preloader .progress-bar {
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
-$("form").submit(function(x){
-    x.preventDefault();
-    if(regex.test($("input").val())) {
-        $(".cta span").text("Listo!");
-        $(".cta").removeClass("active").addClass("sent");
-    }
-});
-</script>
+.preloader .progress-bar .elvaguito {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.preloader .progress-bar .progreso {
+  height: 5vh;
+  width: 50%;
+  border: solid 5px #f1f4ef;
+}
+
+.preloader .progress-bar .progreso .verdad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5vh;
+  width: 25%;
+  background: linear-gradient(315deg, #0cce6b, #dced31, #ef2d56);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 23%;
+  }
+  50% {
+    background-position: 100% 78%;
+  }
+  100% {
+    background-position: 0% 23%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 23%;
+  }
+  50% {
+    background-position: 100% 78%;
+  }
+  100% {
+    background-position: 0% 23%;
+  }
+}
+
+.preloader .progress-bar .spoiler {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+  .preloader {
+    display: none;
+  }
+  .smoll {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background: #000;
+    color: #f1f4ef;
+  }
+  .smoll .more-smoll {
+    color: #68ca37;
+  }
+  .smoll .spoiler {
+    font-size: 10px;
+    color: #495444;
+  }
+}
+/*# sourceMappingURL=main.css.map */
+
+</style>
+<body>
+
+    <div class="smoll">
+        <p>
+            You're in a smoll computa' so i don't know if some animations will work... <span class="more-smoll">let's
+                hope it will</span>
+            <br>
+            <span class="spoiler">ps:you'll not see anything cos it's only made 25%</span>
+        </p>
+    </div>
+
+    <div class="preloader">
+        <div class="progress-bar ">
+            <span class="elvaguito">Progreso actual del rediseño</span>
+            <div class="progreso ">
+                <div class="verdad">
+                    <p>25%</p>
+                </div>
+            </div>
+            <div class="spoiler">
+                Esto se va demorar un buen rato
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
 </html>
