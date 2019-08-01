@@ -1,0 +1,93 @@
+// colores menu
+$fondo1:#011627;
+$fondo2:#e71d36;
+$texto1:#ff9f1c;
+
+html, body{
+    margin:0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+aside{
+    background-color: $fondo1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    position: relative;
+
+    .burger-menu{
+        grid-column: 11;
+        grid-row:2;
+        display:flex;
+        flex-direction: column;
+        // background-color: $texto1;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .bm1,.bm2,.bm3{
+            height: 5px;
+            width: 35px;
+            background-color: white;
+            margin: 3px 0 3px;
+        }
+    }
+
+    
+    h1{
+        grid-column: 5/9;
+        grid-row: 6/7;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -2;
+        font-size: 2em;
+        color: $texto1;
+    }
+
+}
+
+main{
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    text-align: center;
+    z-index: -10;
+
+    .burger-menu{
+        grid-column: 11;
+        grid-row:2;
+        display:flex;
+        flex-direction: column;
+        // background-color: $texto1;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .bm1,.bm2,.bm3{
+            height: 5px;
+            width: 35px;
+            background-color: $fondo1;
+            margin: 3px 0 3px;
+        }
+    }
+
+    h1{
+        grid-column: 5/9;
+        grid-row: 6/7;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -2;
+        font-size: 2em;
+    }
+    
+}
+
+.open{
+    background-color: $fondo2;
+ 
+    z-index: 9999;
+    
+}

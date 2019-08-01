@@ -1,0 +1,118 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+aside {
+  background-color: #011627;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  position: relative;
+}
+
+aside .burger-menu {
+  -ms-grid-column: 11;
+  grid-column: 11;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+aside .burger-menu .bm1, aside .burger-menu .bm2, aside .burger-menu .bm3 {
+  height: 5px;
+  width: 35px;
+  background-color: white;
+  margin: 3px 0 3px;
+}
+
+aside h1 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2;
+  font-size: 2em;
+  color: #ff9f1c;
+}
+
+main {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  text-align: center;
+  z-index: -10;
+}
+
+main .burger-menu {
+  -ms-grid-column: 11;
+  grid-column: 11;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main .burger-menu .bm1, main .burger-menu .bm2, main .burger-menu .bm3 {
+  height: 5px;
+  width: 35px;
+  background-color: #011627;
+  margin: 3px 0 3px;
+}
+
+main h1 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2;
+  font-size: 2em;
+}
+
+.open {
+  background-color: #e71d36;
+  z-index: 9999;
+}
+/*# sourceMappingURL=menu.css.map */
